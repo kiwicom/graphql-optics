@@ -525,7 +525,7 @@ babel-jest@^22.4.3:
     babel-plugin-istanbul "^4.1.5"
     babel-preset-jest "^22.4.3"
 
-babel-loader@^7.1.1:
+babel-loader@^7.1.4:
   version "7.1.4"
   resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-7.1.4.tgz#e3463938bd4e6d55d1c174c5485d406a188ed015"
   dependencies:
@@ -2141,6 +2141,10 @@ ejs@^2.3.1:
   version "2.5.9"
   resolved "https://registry.yarnpkg.com/ejs/-/ejs-2.5.9.tgz#7ba254582a560d267437109a68354112475b0ce5"
 
+elasticsearch-browser@^14.2.2:
+  version "14.2.2"
+  resolved "https://registry.yarnpkg.com/elasticsearch-browser/-/elasticsearch-browser-14.2.2.tgz#6d49b8263031d979503c11571740f68b5833497f"
+
 electron-to-chromium@^1.3.30:
   version "1.3.42"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.42.tgz#95c33bf01d0cc405556aec899fe61fd4d76ea0f9"
@@ -3160,6 +3164,10 @@ hoek@4.x.x:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/hoek/-/hoek-4.2.1.tgz#9634502aa12c445dd5a7c5734b572bb8738aacbb"
 
+hoist-non-react-statics@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.5.0.tgz#d2ca2dfc19c5a91c5a6615ce8e564ef0347e2a40"
+
 home-or-tmp@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/home-or-tmp/-/home-or-tmp-2.0.0.tgz#e36c3f2d2cae7d746a857e38d18d5f32a7882db8"
@@ -3316,10 +3324,6 @@ ignore@^3.3.3:
   version "3.3.7"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-3.3.7.tgz#612289bfb3c220e186a58118618d5be8c1bab021"
 
-immutable@3.7.x:
-  version "3.7.6"
-  resolved "https://registry.yarnpkg.com/immutable/-/immutable-3.7.6.tgz#13b4d3cb12befa15482a26fe1b2ebae640071e4b"
-
 import-local@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/import-local/-/import-local-1.0.0.tgz#5e4ffdc03f4fe6c009c6729beb29631c2f8227bc"
@@ -3418,7 +3422,7 @@ into-stream@^3.1.0:
     from2 "^2.1.1"
     p-is-promise "^1.1.0"
 
-invariant@^2.2.2:
+invariant@^2.0.0, invariant@^2.2.2:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
   dependencies:
@@ -4379,13 +4383,13 @@ locate-path@^2.0.0:
     p-locate "^2.0.0"
     path-exists "^3.0.0"
 
+lodash-es@^4.17.5:
+  version "4.17.8"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.8.tgz#6fa8c8c5d337481df0bdf1c0d899d42473121e45"
+
 lodash.sortby@^4.7.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
-
-lodash@3.10.x:
-  version "3.10.1"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
 
 lodash@^4.13.1, lodash@^4.14.0, lodash@^4.15.0, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.3.0:
   version "4.17.5"
@@ -5545,17 +5549,16 @@ react-is@^16.3.2:
   version "16.3.2"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.3.2.tgz#f4d3d0e2f5fbb6ac46450641eb2e25bf05d36b22"
 
-react-shallow-testutils@2.0.x:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/react-shallow-testutils/-/react-shallow-testutils-2.0.0.tgz#9087b40b368b124674c7bfcf9fdd6ad983914a97"
-
-react-test-render@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/react-test-render/-/react-test-render-1.1.1.tgz#35946bb383f8b82564768fd9d8eaf120c3032a9a"
+react-redux@^5.0.7:
+  version "5.0.7"
+  resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-5.0.7.tgz#0dc1076d9afb4670f993ffaef44b8f8c1155a4c8"
   dependencies:
-    immutable "3.7.x"
-    lodash "3.10.x"
-    react-shallow-testutils "2.0.x"
+    hoist-non-react-statics "^2.5.0"
+    invariant "^2.0.0"
+    lodash "^4.17.5"
+    lodash-es "^4.17.5"
+    loose-envify "^1.1.0"
+    prop-types "^15.6.0"
 
 react-test-renderer@^16.3.2:
   version "16.3.2"

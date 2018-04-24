@@ -3,9 +3,7 @@ import AggregationList from '../AggregationList';
 import renderer from 'react-test-renderer';
 
 it('renders correctly', () => {
-  const data = [ 
-    {
-      "key" : "allLocations",
+  const data = [ { "key" : "allLocations",
       "doc_count" : 6
     },
     {
@@ -18,7 +16,7 @@ it('renders correctly', () => {
     }
   ];
   const tree = renderer
-    .create(<AggregationList aggregations={data}>Facebook</AggregationList>)
+    .create(<AggregationList aggregations={data} />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
