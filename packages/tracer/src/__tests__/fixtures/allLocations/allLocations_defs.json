@@ -1,0 +1,277 @@
+[
+  {
+    "kind": "OperationDefinition",
+    "operation": "query",
+    "variableDefinitions": [],
+    "directives": [],
+    "selectionSet": {
+      "kind": "SelectionSet",
+      "selections": [
+        {
+          "kind": "Field",
+          "name": {
+            "kind": "Name",
+            "value": "allLocations",
+            "loc": {
+              "start": 3,
+              "end": 15
+            }
+          },
+          "arguments": [
+            {
+              "kind": "Argument",
+              "name": {
+                "kind": "Name",
+                "value": "search",
+                "loc": {
+                  "start": 16,
+                  "end": 22
+                }
+              },
+              "value": {
+                "kind": "StringValue",
+                "value": "Boulder",
+                "block": false,
+                "loc": {
+                  "start": 24,
+                  "end": 33
+                }
+              },
+              "loc": {
+                "start": 16,
+                "end": 33
+              }
+            }
+          ],
+          "directives": [],
+          "selectionSet": {
+            "kind": "SelectionSet",
+            "selections": [
+              {
+                "kind": "Field",
+                "name": {
+                  "kind": "Name",
+                  "value": "edges",
+                  "loc": {
+                    "start": 40,
+                    "end": 45
+                  }
+                },
+                "arguments": [],
+                "directives": [],
+                "selectionSet": {
+                  "kind": "SelectionSet",
+                  "selections": [
+                    {
+                      "kind": "Field",
+                      "name": {
+                        "kind": "Name",
+                        "value": "node",
+                        "loc": {
+                          "start": 53,
+                          "end": 57
+                        }
+                      },
+                      "arguments": [],
+                      "directives": [],
+                      "selectionSet": {
+                        "kind": "SelectionSet",
+                        "selections": [
+                          {
+                            "kind": "Field",
+                            "name": {
+                              "kind": "Name",
+                              "value": "locationId",
+                              "loc": {
+                                "start": 67,
+                                "end": 77
+                              }
+                            },
+                            "arguments": [],
+                            "directives": [],
+                            "loc": {
+                              "start": 67,
+                              "end": 77
+                            }
+                          },
+                          {
+                            "kind": "Field",
+                            "name": {
+                              "kind": "Name",
+                              "value": "name",
+                              "loc": {
+                                "start": 85,
+                                "end": 89
+                              }
+                            },
+                            "arguments": [],
+                            "directives": [],
+                            "loc": {
+                              "start": 85,
+                              "end": 89
+                            }
+                          },
+                          {
+                            "kind": "Field",
+                            "name": {
+                              "kind": "Name",
+                              "value": "slug",
+                              "loc": {
+                                "start": 97,
+                                "end": 101
+                              }
+                            },
+                            "arguments": [],
+                            "directives": [],
+                            "loc": {
+                              "start": 97,
+                              "end": 101
+                            }
+                          },
+                          {
+                            "kind": "Field",
+                            "name": {
+                              "kind": "Name",
+                              "value": "timezone",
+                              "loc": {
+                                "start": 109,
+                                "end": 117
+                              }
+                            },
+                            "arguments": [],
+                            "directives": [],
+                            "loc": {
+                              "start": 109,
+                              "end": 117
+                            }
+                          },
+                          {
+                            "kind": "Field",
+                            "name": {
+                              "kind": "Name",
+                              "value": "type",
+                              "loc": {
+                                "start": 125,
+                                "end": 129
+                              }
+                            },
+                            "arguments": [],
+                            "directives": [],
+                            "loc": {
+                              "start": 125,
+                              "end": 129
+                            }
+                          },
+                          {
+                            "kind": "Field",
+                            "name": {
+                              "kind": "Name",
+                              "value": "isActive",
+                              "loc": {
+                                "start": 137,
+                                "end": 145
+                              }
+                            },
+                            "arguments": [],
+                            "directives": [],
+                            "loc": {
+                              "start": 137,
+                              "end": 145
+                            }
+                          },
+                          {
+                            "kind": "Field",
+                            "name": {
+                              "kind": "Name",
+                              "value": "stationsCount",
+                              "loc": {
+                                "start": 153,
+                                "end": 166
+                              }
+                            },
+                            "arguments": [],
+                            "directives": [],
+                            "loc": {
+                              "start": 153,
+                              "end": 166
+                            }
+                          },
+                          {
+                            "kind": "Field",
+                            "name": {
+                              "kind": "Name",
+                              "value": "airportsCount",
+                              "loc": {
+                                "start": 174,
+                                "end": 187
+                              }
+                            },
+                            "arguments": [],
+                            "directives": [],
+                            "loc": {
+                              "start": 174,
+                              "end": 187
+                            }
+                          },
+                          {
+                            "kind": "Field",
+                            "name": {
+                              "kind": "Name",
+                              "value": "rank",
+                              "loc": {
+                                "start": 195,
+                                "end": 199
+                              }
+                            },
+                            "arguments": [],
+                            "directives": [],
+                            "loc": {
+                              "start": 195,
+                              "end": 199
+                            }
+                          }
+                        ],
+                        "loc": {
+                          "start": 58,
+                          "end": 206
+                        }
+                      },
+                      "loc": {
+                        "start": 53,
+                        "end": 206
+                      }
+                    }
+                  ],
+                  "loc": {
+                    "start": 46,
+                    "end": 211
+                  }
+                },
+                "loc": {
+                  "start": 40,
+                  "end": 211
+                }
+              }
+            ],
+            "loc": {
+              "start": 35,
+              "end": 214
+            }
+          },
+          "loc": {
+            "start": 3,
+            "end": 214
+          }
+        }
+      ],
+      "loc": {
+        "start": 0,
+        "end": 216
+      }
+    },
+    "loc": {
+      "start": 0,
+      "end": 216
+    }
+  }
+]

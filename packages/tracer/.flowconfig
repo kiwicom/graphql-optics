@@ -1,0 +1,21 @@
+[ignore]
+<PROJECT_ROOT>/node_modules/config-chain/test/broken.json
+<PROJECT_ROOT>/node_modules/protobufjs-no-cli/.*
+
+[include]
+
+[libs]
+./config/flow-typed
+
+[options]
+module.name_mapper='^express-graphql$' -> '<PROJECT_ROOT>/config/stub/GeneralStub.js'
+module.name_mapper='^start-server-webpack-plugin$' -> '<PROJECT_ROOT>/config/stub/GeneralStub.js'
+module.name_mapper='^graphql-iso-date$' -> '<PROJECT_ROOT>/config/stub/GeneralStub.js'
+
+suppress_comment=\\(.\\|\n\\)*\\$FlowAllowMockMagic
+suppress_comment=\\(.\\|\n\\)*\\$FlowAllowNextLineInThisTest
+suppress_comment=\\(.\\|\n\\)*\\$FlowExpectedError: .+
+suppress_comment=\\(.\\|\n\\)*\\$FlowIssue: https://github.com/facebook/flow/issues/[0-9]+
+
+[version]
+^0.64.0

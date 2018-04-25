@@ -1,0 +1,37 @@
+{
+  "main": "dist/index.js",
+  "name": "graphql-optics-tracer",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-eslint": "^8.1.1",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^4.1.1",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-plugin-flowtype": "^2.34.1",
+    "eslint-plugin-import": "^2.6.1",
+    "eslint-plugin-jest": "^20.0.3",
+    "eslint-plugin-prettier": "^2.1.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "flow-bin": "^0.64.0",
+    "jest": "^20.0.4",
+    "prettier": "^1.5.2",
+    "webpack-cli": "^2.0.15"
+  },
+  "dependencies": {
+    "deepmerge": "^2.1.0",
+    "elasticsearch": "^14.2.2",
+    "uuid": "^3.2.1",
+    "webpack": "^4.6.0"
+  }
+}

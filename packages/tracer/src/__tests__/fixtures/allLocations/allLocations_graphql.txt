@@ -1,0 +1,17 @@
+{
+ allLocations(search: "Boulder") {
+   edges {
+     node {
+       locationId
+       name
+       slug
+       timezone
+       type
+       isActive
+       stationsCount
+       airportsCount
+       rank
+     }
+   }
+ }
+}

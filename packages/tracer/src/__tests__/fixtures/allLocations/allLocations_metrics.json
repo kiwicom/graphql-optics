@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "startTime": "2018-04-23T14:08:43.281Z",
+  "endTime": "2018-04-23T14:08:43.471Z",
+  "duration": 189736506,
+  "execution": {
+    "resolvers": [
+      {
+        "path": ["allLocations"],
+        "parentType": "RootQuery",
+        "fieldName": "allLocations",
+        "returnType": "LocationConnection",
+        "startOffset": 20973425,
+        "duration": 167462177
+      },
+      {
+        "path": ["allLocations", "edges"],
+        "parentType": "LocationConnection",
+        "fieldName": "edges",
+        "returnType": "[LocationEdge]",
+        "startOffset": 188696747,
+        "duration": 109793
+      },
+      {
+        "path": ["allLocations", "edges", 0, "node"],
+        "parentType": "LocationEdge",
+        "fieldName": "node",
+        "returnType": "Location",
+        "startOffset": 189077701,
+        "duration": 10770
+      },
+      {
+        "path": ["allLocations", "edges", 0, "node", "locationId"],
+        "parentType": "Location",
+        "fieldName": "locationId",
+        "returnType": "String",
+        "startOffset": 189121417,
+        "duration": 28795
+      },
+      {
+        "path": ["allLocations", "edges", 0, "node", "name"],
+        "parentType": "Location",
+        "fieldName": "name",
+        "returnType": "String",
+        "startOffset": 189257808,
+        "duration": 19902
+      },
+      {
+        "path": ["allLocations", "edges", 0, "node", "slug"],
+        "parentType": "Location",
+        "fieldName": "slug",
+        "returnType": "String",
+        "startOffset": 189293761,
+        "duration": 17024
+      },
+      {
+        "path": ["allLocations", "edges", 0, "node", "timezone"],
+        "parentType": "Location",
+        "fieldName": "timezone",
+        "returnType": "String",
+        "startOffset": 189318966,
+        "duration": 16063
+      },
+      {
+        "path": ["allLocations", "edges", 0, "node", "type"],
+        "parentType": "Location",
+        "fieldName": "type",
+        "returnType": "String",
+        "startOffset": 189342362,
+        "duration": 14834
+      },
+      {
+        "path": ["allLocations", "edges", 0, "node", "isActive"],
+        "parentType": "Location",
+        "fieldName": "isActive",
+        "returnType": "Boolean",
+        "startOffset": 189364128,
+        "duration": 19423
+      },
+      {
+        "path": ["allLocations", "edges", 0, "node", "stationsCount"],
+        "parentType": "Location",
+        "fieldName": "stationsCount",
+        "returnType": "Int",
+        "startOffset": 189396668,
+        "duration": 18364
+      },
+      {
+        "path": ["allLocations", "edges", 0, "node", "airportsCount"],
+        "parentType": "Location",
+        "fieldName": "airportsCount",
+        "returnType": "Int",
+        "startOffset": 189421474,
+        "duration": 14960
+      },
+      {
+        "path": ["allLocations", "edges", 0, "node", "rank"],
+        "parentType": "Location",
+        "fieldName": "rank",
+        "returnType": "Int",
+        "startOffset": 189442206,
+        "duration": 20317
+      }
+    ]
+  }
+}

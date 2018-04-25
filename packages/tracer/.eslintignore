@@ -1,0 +1,7 @@
+# /node_modules/* and /bower_components/* are ignored by default
+
+config/stub/*
+config/webpack.*.js
+config/flow-typed/*
+coverage/*
+dist/*

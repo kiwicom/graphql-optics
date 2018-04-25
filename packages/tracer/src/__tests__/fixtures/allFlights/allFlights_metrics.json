@@ -1,0 +1,874 @@
+{
+  "version": 1,
+  "startTime": "2018-04-19T11:02:21.189Z",
+  "endTime": "2018-04-19T11:02:22.558Z",
+  "duration": 1369694311,
+  "execution": {
+    "resolvers": [
+      {
+        "path": ["allFlights"],
+        "parentType": "RootQuery",
+        "fieldName": "allFlights",
+        "returnType": "FlightConnection",
+        "startOffset": 33560904,
+        "duration": 1333867737
+      },
+      {
+        "path": ["allFlights", "edges"],
+        "parentType": "FlightConnection",
+        "fieldName": "edges",
+        "returnType": "[FlightEdge]",
+        "startOffset": 1367665902,
+        "duration": 126609
+      },
+      {
+        "path": ["allFlights", "edges", 0, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1368030942,
+        "duration": 9311
+      },
+      {
+        "path": ["allFlights", "edges", 0, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1368061686,
+        "duration": 79362
+      },
+      {
+        "path": ["allFlights", "edges", 1, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1368226792,
+        "duration": 3976
+      },
+      {
+        "path": ["allFlights", "edges", 1, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1368238901,
+        "duration": 14827
+      },
+      {
+        "path": ["allFlights", "edges", 2, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1368270462,
+        "duration": 2080
+      },
+      {
+        "path": ["allFlights", "edges", 2, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1368279369,
+        "duration": 8775
+      },
+      {
+        "path": ["allFlights", "edges", 3, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1368300045,
+        "duration": 1563
+      },
+      {
+        "path": ["allFlights", "edges", 3, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1368307883,
+        "duration": 7682
+      },
+      {
+        "path": ["allFlights", "edges", 4, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1368327132,
+        "duration": 1509
+      },
+      {
+        "path": ["allFlights", "edges", 4, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1368334729,
+        "duration": 7348
+      },
+      {
+        "path": ["allFlights", "edges", 5, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1368352956,
+        "duration": 1441
+      },
+      {
+        "path": ["allFlights", "edges", 5, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1368360604,
+        "duration": 7048
+      },
+      {
+        "path": ["allFlights", "edges", 6, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1368378671,
+        "duration": 1418
+      },
+      {
+        "path": ["allFlights", "edges", 6, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1368386088,
+        "duration": 6609
+      },
+      {
+        "path": ["allFlights", "edges", 7, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1368403385,
+        "duration": 1388
+      },
+      {
+        "path": ["allFlights", "edges", 7, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1368410716,
+        "duration": 6683
+      },
+      {
+        "path": ["allFlights", "edges", 8, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1368428422,
+        "duration": 1347
+      },
+      {
+        "path": ["allFlights", "edges", 8, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1368435818,
+        "duration": 6434
+      },
+      {
+        "path": ["allFlights", "edges", 9, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1368452907,
+        "duration": 1427
+      },
+      {
+        "path": ["allFlights", "edges", 9, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1368460252,
+        "duration": 11469
+      },
+      {
+        "path": ["allFlights", "edges", 10, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1368483044,
+        "duration": 1493
+      },
+      {
+        "path": ["allFlights", "edges", 10, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1368490531,
+        "duration": 6500
+      },
+      {
+        "path": ["allFlights", "edges", 11, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1368507594,
+        "duration": 1360
+      },
+      {
+        "path": ["allFlights", "edges", 11, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1368515056,
+        "duration": 6179
+      },
+      {
+        "path": ["allFlights", "edges", 12, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1368532184,
+        "duration": 1413
+      },
+      {
+        "path": ["allFlights", "edges", 12, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1368539552,
+        "duration": 6598
+      },
+      {
+        "path": ["allFlights", "edges", 13, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1368556718,
+        "duration": 1370
+      },
+      {
+        "path": ["allFlights", "edges", 13, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1368564078,
+        "duration": 6523
+      },
+      {
+        "path": ["allFlights", "edges", 14, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1368581334,
+        "duration": 1386
+      },
+      {
+        "path": ["allFlights", "edges", 14, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1368588654,
+        "duration": 6410
+      },
+      {
+        "path": ["allFlights", "edges", 15, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1368605762,
+        "duration": 1423
+      },
+      {
+        "path": ["allFlights", "edges", 15, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1368613115,
+        "duration": 6543
+      },
+      {
+        "path": ["allFlights", "edges", 16, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1368630192,
+        "duration": 1483
+      },
+      {
+        "path": ["allFlights", "edges", 16, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1368637552,
+        "duration": 6742
+      },
+      {
+        "path": ["allFlights", "edges", 17, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1368654760,
+        "duration": 1430
+      },
+      {
+        "path": ["allFlights", "edges", 17, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1368661966,
+        "duration": 6440
+      },
+      {
+        "path": ["allFlights", "edges", 18, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1368678811,
+        "duration": 1341
+      },
+      {
+        "path": ["allFlights", "edges", 18, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1368685923,
+        "duration": 6402
+      },
+      {
+        "path": ["allFlights", "edges", 19, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1368702987,
+        "duration": 1324
+      },
+      {
+        "path": ["allFlights", "edges", 19, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1368710208,
+        "duration": 6587
+      },
+      {
+        "path": ["allFlights", "edges", 20, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1368727388,
+        "duration": 1469
+      },
+      {
+        "path": ["allFlights", "edges", 20, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1368734666,
+        "duration": 6796
+      },
+      {
+        "path": ["allFlights", "edges", 21, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1368752004,
+        "duration": 1387
+      },
+      {
+        "path": ["allFlights", "edges", 21, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1368759426,
+        "duration": 6397
+      },
+      {
+        "path": ["allFlights", "edges", 22, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1368776137,
+        "duration": 1285
+      },
+      {
+        "path": ["allFlights", "edges", 22, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1368783245,
+        "duration": 6565
+      },
+      {
+        "path": ["allFlights", "edges", 23, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1368800491,
+        "duration": 1452
+      },
+      {
+        "path": ["allFlights", "edges", 23, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1368807854,
+        "duration": 6636
+      },
+      {
+        "path": ["allFlights", "edges", 24, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1368824863,
+        "duration": 1470
+      },
+      {
+        "path": ["allFlights", "edges", 24, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1368832306,
+        "duration": 6495
+      },
+      {
+        "path": ["allFlights", "edges", 25, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1368849149,
+        "duration": 1460
+      },
+      {
+        "path": ["allFlights", "edges", 25, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1368856460,
+        "duration": 6629
+      },
+      {
+        "path": ["allFlights", "edges", 26, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1368873491,
+        "duration": 1404
+      },
+      {
+        "path": ["allFlights", "edges", 26, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1368880772,
+        "duration": 6667
+      },
+      {
+        "path": ["allFlights", "edges", 27, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1368898091,
+        "duration": 1360
+      },
+      {
+        "path": ["allFlights", "edges", 27, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1368905313,
+        "duration": 19447
+      },
+      {
+        "path": ["allFlights", "edges", 28, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1368934969,
+        "duration": 1368
+      },
+      {
+        "path": ["allFlights", "edges", 28, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1368942043,
+        "duration": 6331
+      },
+      {
+        "path": ["allFlights", "edges", 29, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1368958539,
+        "duration": 1274
+      },
+      {
+        "path": ["allFlights", "edges", 29, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1368965599,
+        "duration": 6470
+      },
+      {
+        "path": ["allFlights", "edges", 30, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1368981892,
+        "duration": 1348
+      },
+      {
+        "path": ["allFlights", "edges", 30, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1368992600,
+        "duration": 6434
+      },
+      {
+        "path": ["allFlights", "edges", 31, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1369009086,
+        "duration": 1337
+      },
+      {
+        "path": ["allFlights", "edges", 31, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1369016001,
+        "duration": 6361
+      },
+      {
+        "path": ["allFlights", "edges", 32, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1369032221,
+        "duration": 1314
+      },
+      {
+        "path": ["allFlights", "edges", 32, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1369038953,
+        "duration": 6373
+      },
+      {
+        "path": ["allFlights", "edges", 33, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1369055248,
+        "duration": 1323
+      },
+      {
+        "path": ["allFlights", "edges", 33, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1369062043,
+        "duration": 6315
+      },
+      {
+        "path": ["allFlights", "edges", 34, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1369078453,
+        "duration": 1445
+      },
+      {
+        "path": ["allFlights", "edges", 34, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1369085454,
+        "duration": 6434
+      },
+      {
+        "path": ["allFlights", "edges", 35, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1369102006,
+        "duration": 1385
+      },
+      {
+        "path": ["allFlights", "edges", 35, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1369108993,
+        "duration": 6408
+      },
+      {
+        "path": ["allFlights", "edges", 36, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1369125343,
+        "duration": 1386
+      },
+      {
+        "path": ["allFlights", "edges", 36, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1369132268,
+        "duration": 6252
+      },
+      {
+        "path": ["allFlights", "edges", 37, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1369148534,
+        "duration": 1347
+      },
+      {
+        "path": ["allFlights", "edges", 37, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1369155323,
+        "duration": 6498
+      },
+      {
+        "path": ["allFlights", "edges", 38, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1369172040,
+        "duration": 1237
+      },
+      {
+        "path": ["allFlights", "edges", 38, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1369178943,
+        "duration": 6498
+      },
+      {
+        "path": ["allFlights", "edges", 39, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1369195322,
+        "duration": 1253
+      },
+      {
+        "path": ["allFlights", "edges", 39, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1369201926,
+        "duration": 6472
+      },
+      {
+        "path": ["allFlights", "edges", 40, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1369218266,
+        "duration": 1407
+      },
+      {
+        "path": ["allFlights", "edges", 40, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1369225210,
+        "duration": 6295
+      },
+      {
+        "path": ["allFlights", "edges", 41, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1369241472,
+        "duration": 1399
+      },
+      {
+        "path": ["allFlights", "edges", 41, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1369248211,
+        "duration": 6217
+      },
+      {
+        "path": ["allFlights", "edges", 42, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1369264573,
+        "duration": 1302
+      },
+      {
+        "path": ["allFlights", "edges", 42, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1369271595,
+        "duration": 6535
+      },
+      {
+        "path": ["allFlights", "edges", 43, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1369288271,
+        "duration": 1317
+      },
+      {
+        "path": ["allFlights", "edges", 43, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1369295147,
+        "duration": 6349
+      },
+      {
+        "path": ["allFlights", "edges", 44, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1369311712,
+        "duration": 1333
+      },
+      {
+        "path": ["allFlights", "edges", 44, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1369318614,
+        "duration": 6298
+      },
+      {
+        "path": ["allFlights", "edges", 45, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1369334810,
+        "duration": 1295
+      },
+      {
+        "path": ["allFlights", "edges", 45, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1369341556,
+        "duration": 6494
+      },
+      {
+        "path": ["allFlights", "edges", 46, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1369357970,
+        "duration": 1286
+      },
+      {
+        "path": ["allFlights", "edges", 46, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1369364782,
+        "duration": 6319
+      },
+      {
+        "path": ["allFlights", "edges", 47, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1369380877,
+        "duration": 1336
+      },
+      {
+        "path": ["allFlights", "edges", 47, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1369387755,
+        "duration": 6402
+      },
+      {
+        "path": ["allFlights", "edges", 48, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1369404182,
+        "duration": 1336
+      },
+      {
+        "path": ["allFlights", "edges", 48, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1369410988,
+        "duration": 6431
+      },
+      {
+        "path": ["allFlights", "edges", 49, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1369427319,
+        "duration": 1349
+      },
+      {
+        "path": ["allFlights", "edges", 49, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1369434125,
+        "duration": 6406
+      },
+      {
+        "path": ["allFlights", "edges", 50, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1369450487,
+        "duration": 1335
+      },
+      {
+        "path": ["allFlights", "edges", 50, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1369457308,
+        "duration": 6404
+      },
+      {
+        "path": ["allFlights", "edges", 51, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1369473671,
+        "duration": 1262
+      },
+      {
+        "path": ["allFlights", "edges", 51, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1369480484,
+        "duration": 6358
+      },
+      {
+        "path": ["allFlights", "edges", 52, "node"],
+        "parentType": "FlightEdge",
+        "fieldName": "node",
+        "returnType": "Flight",
+        "startOffset": 1369496749,
+        "duration": 1338
+      },
+      {
+        "path": ["allFlights", "edges", 52, "node", "id"],
+        "parentType": "Flight",
+        "fieldName": "id",
+        "returnType": "ID!",
+        "startOffset": 1369503490,
+        "duration": 6372
+      }
+    ]
+  }
+}

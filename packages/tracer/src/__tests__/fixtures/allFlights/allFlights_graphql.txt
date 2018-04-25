@@ -1,0 +1,11 @@
+{
+ allFlights(
+   search: {from: {location:"PRG"}, to: {location:"BCN"}, date: {exact: "2018-05-01"}}
+ ) {
+   edges {
+     node {
+       id
+     }
+   }
+ }
+}

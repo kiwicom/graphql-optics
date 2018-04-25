@@ -1,0 +1,61 @@
+{
+  "env": {
+    "node": true,
+    "jest": true,
+  },
+  "extends": [
+    "airbnb-base",
+    "eslint:recommended",
+    "prettier",
+    "prettier/react",
+    "plugin:flowtype/recommended",
+    "plugin:jest/recommended",
+  ],
+  "parser": "babel-eslint",
+  "plugins": [
+    "import",
+    "jest",
+    "prettier",
+    "promise",
+    "flowtype",
+  ],
+  "rules": {
+    "no-use-before-define": 0, # I like the logic going from highlevel to lowlevel.
+    "no-shadow": 0, # Shadowing is a nice language feature. Naming is hard.
+    "no-warning-comments": "error",
+    "import/prefer-default-export": 0, # Keep imports of helper functions consistent.
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.js"
+        ]
+      }
+    ],
+    "prefer-const": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "bracketSpacing": true,
+        "printWidth": 80,
+        "singleQuote": true,
+        "tabWidth": 2,
+        "trailingComma": "all",
+      }
+    ],
+    "promise/always-return": "error",
+    "promise/no-return-wrap": "error",
+    "promise/param-names": "error",
+    "promise/catch-or-return": "error",
+    "promise/no-native": "off",
+    "promise/no-nesting": "warn",
+    "promise/no-promise-in-callback": "warn",
+    "promise/no-callback-in-promise": "warn",
+    "promise/avoid-new": "off",
+    "promise/prefer-await-to-then": "error",
+    "promise/prefer-await-to-callbacks": "off",
+    "flowtype/require-valid-file-annotation": "error",
+    "flowtype/generic-spacing": "off", # in conflict with Prettier
+    "eol-last": "error"
+  }
+}
