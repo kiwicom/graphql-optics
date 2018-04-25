@@ -1,22 +1,22 @@
-import React from 'react';
-import AggregationList from '../AggregationList';
-import renderer from 'react-test-renderer';
+import React from 'react'
+import AggregationList from '../AggregationList'
+import renderer from 'react-test-renderer'
 
 it('renders correctly', () => {
-  const data = [ { "key" : "allLocations",
-      "doc_count" : 6
+  const data = [
+    {
+      key: 'allLocations',
+      doc_count: 6,
     },
     {
-      "key" : "allFlights",
-      "doc_count" : 3
+      key: 'allFlights',
+      doc_count: 3,
     },
     {
-      "key" : "allWhatever",
-      "doc_count" : 2
-    }
-  ];
-  const tree = renderer
-    .create(<AggregationList aggregations={data} />)
-    .toJSON();
-  expect(tree).toMatchSnapshot();
-});
+      key: 'allWhatever',
+      doc_count: 2,
+    },
+  ]
+  const tree = renderer.create(<AggregationList aggregations={data} />).toJSON()
+  expect(tree).toMatchSnapshot()
+})
