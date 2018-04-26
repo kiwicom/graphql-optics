@@ -19,14 +19,15 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      aggregations: [],
+      aggregations: undefined,
       queries: {},
     }
   }
 
   loadAggregations() {
-    if (this.state.aggregations.length) return
-
+    if (this.state.aggregations !== undefined) {
+      return
+    }
     server
       .search({
         index: config.elastic_index,
@@ -55,8 +56,9 @@ class App extends React.Component {
     }
     const rootQuery = match.params.rootQuery
     const query = this.state.queries[rootQuery]
-    if (query) return
-
+    if (query) {
+      return
+    }
     server
       .search({
         index: config.elastic_index,
@@ -105,7 +107,7 @@ class App extends React.Component {
           path={aggPath}
           render={({ match }) => (
             <DataColumn>
-              {this.state.aggregations.map(aggregation => (
+              {(this.state.aggregations || []).map(aggregation => (
                 <Aggregation
                   key={aggregation.key}
                   aggregation={aggregation}
