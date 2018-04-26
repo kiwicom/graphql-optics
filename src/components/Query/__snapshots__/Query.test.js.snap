@@ -2,26 +2,17 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="button"
-  onClick={[Function]}
   style={
     Object {
+      "backgroundColor": "rgba(248, 248, 255, 1)",
+      "fontFamily": "monospace",
       "marginBottom": "20px",
+      "overflowX": "auto",
+      "whiteSpace": "pre",
+      "width": "100%",
     }
   }
 >
-  <div
-    style={
-      Object {
-        "backgroundColor": "rgba(248, 248, 255, 1)",
-        "fontFamily": "monospace",
-        "overflowX": "auto",
-        "whiteSpace": "pre",
-        "width": "100%",
-      }
-    }
-  >
-    {allLocations(search: "Boulder")})
-  </div>
+  {allLocations(search: "Boulder")})
 </div>
-`;
+`

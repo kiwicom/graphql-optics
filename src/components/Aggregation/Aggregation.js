@@ -13,7 +13,8 @@ const Aggregation = ({ aggregation, history, isActive }) => (
     isActive={isActive}
     onClick={() => history.push(`/aggregations/${aggregation.key}`)}
   >
-    {aggregation.key} - {aggregation.doc_count}
+    <span style={{ flexGrow: 1 }}>{aggregation.key}</span>
+    <span>{aggregation.doc_count}</span>
   </Button>
 )
 

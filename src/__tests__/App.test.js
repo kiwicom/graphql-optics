@@ -31,7 +31,12 @@ jest.mock('../server', () => {
   }
   const queriesResponse = {
     hits: {
-      hits: [{ _id: 'uuid', _source: { graphql: 'allLocations...' } }],
+      hits: [
+        {
+          _id: 'uuid',
+          _source: { graphql: 'allLocations...', metrics: { duration: 1 } },
+        },
+      ],
     },
   }
 
@@ -83,6 +88,13 @@ describe('App', () => {
     expect(server._search_spy.mock.calls[1][0]).toEqual({
       index: config.elastic_index,
       body: {
+        sort: [
+          {
+            'metrics.duration': {
+              order: 'desc',
+            },
+          },
+        ],
         query: {
           match: {
             rootQuery: 'allLocations',

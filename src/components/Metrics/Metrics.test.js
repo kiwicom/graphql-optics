@@ -1,6 +1,6 @@
 import React from 'react'
 import Metrics from './Metrics'
-import renderer from 'react-test-renderer'
+import { renderWithRouter } from '../../__tests__/helpers'
 
 it('renders correctly', () => {
   const data = {
@@ -8,6 +8,6 @@ it('renders correctly', () => {
       metrics: { duration: 1 },
     },
   }
-  const tree = renderer.create(<Metrics trace={data} />).toJSON()
+  const tree = renderWithRouter({ children: <Metrics trace={data} /> })
   expect(tree).toMatchSnapshot()
 })

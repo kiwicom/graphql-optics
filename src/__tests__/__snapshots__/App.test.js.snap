@@ -28,9 +28,18 @@ exports[`App renders correctly (after data is returned from server) 1`] = `
         }
       }
     >
-      allLocations
-       - 
-      442
+      <span
+        style={
+          Object {
+            "flexGrow": 1,
+          }
+        }
+      >
+        allLocations
+      </span>
+      <span>
+        442
+      </span>
     </div>
     <div
       className="button"
@@ -41,9 +50,18 @@ exports[`App renders correctly (after data is returned from server) 1`] = `
         }
       }
     >
-      allFlights
-       - 
-      3342
+      <span
+        style={
+          Object {
+            "flexGrow": 1,
+          }
+        }
+      >
+        allFlights
+      </span>
+      <span>
+        3342
+      </span>
     </div>
     <div
       className="button"
@@ -54,10 +72,19 @@ exports[`App renders correctly (after data is returned from server) 1`] = `
         }
       }
     >
-      allWhatever
-       - 
-      2
+      <span
+        style={
+          Object {
+            "flexGrow": 1,
+          }
+        }
+      >
+        allWhatever
+      </span>
+      <span>
+        2
+      </span>
     </div>
   </div>
 </div>
-`;
+`

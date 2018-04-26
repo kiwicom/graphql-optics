@@ -1,19 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<dl
+<div
+  className="button"
+  onClick={[Function]}
   style={
     Object {
       "fontFamily": "sans-serif",
     }
   }
 >
-  <dt>
-    Duration
-  </dt>
-  <dd>
+  <span
+    style={
+      Object {
+        "flexGrow": 1,
+      }
+    }
+  />
+  <span>
     0
      ms
-  </dd>
-</dl>
+  </span>
+</div>
 `;
