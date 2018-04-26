@@ -1,5 +1,5 @@
 {
-  "elastic_index": "graphql_test",
+  "elastic_index": "graphql",
   "elastic": {
     "host": "localhost:9200",
     "log": "trace"

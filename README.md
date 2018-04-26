@@ -1,104 +1,30 @@
-# GraphQL Optics [![CircleCI](https://circleci.com/gh/kiwicom/graphql-optics.svg?style=svg)](https://circleci.com/gh/kiwicom/graphql-optics)
+# graphql-optics
+
+[![CircleCI](https://circleci.com/gh/kiwicom/graphql-optics.svg?style=svg)](https://circleci.com/gh/kiwicom/graphql-optics)
 
 Tracing library and analyitcs dashboard for GraphQL. Engineered as an extensible replacement for ApolloEnging.
 
-## Usage with `graphql-express` and `apollo-tracing`
+## Getting started
 
-Install the package
+#### Elasticsearch
 
-```
-yarn add graphql-optics-tracer
-```
+If you don't have an elasticsearch instance you can use for staging, try the [zero-configuration Docker image](https://www.docker.elastic.co/). The default settings there match the default configuration in the dashboard app and tracer package.
 
-In the module where you instantiate and assign the graphqlHTTP middleware:
+#### Tracing data
 
-```javascript
-import { formatEntry, logEntry } from 'graphql-optics-tracer'
-import schema from './yourGraphQLSchema'
-import {
-  TraceCollector,
-  instrumentSchemaForTracing,
-  formatTraceData,
-} from 'apollo-tracing'
+Follow the installation and usage instructions in the [graphql-optics-tracing](packages/tracer) package. Then send some requests to your graphql server, perhaps using the [graphiql IDE](https://github.com/graphql/graphiql).
 
-app.use('/', (request, response) => {
-  // start the timer
-  const traceCollector = new TraceCollector()
-  traceCollector.requestDidStart()
+## Launching the dashboard
 
-  graphqlHTTP((req, res, params) => ({
-    schema: instrumentSchemaForTracing(schema),
-    extensions: req => {
-      traceCollector.requestDidEnd()
-      const definitions = req.document.definitions
-      const graphql = graphQLParams.query
-      const metrics = formatTraceData(traceCollector)
-      const entry = formatEntry({ request: { definitions, graphql }, metrics })
-      logEntry({ entry })
-      return {}
-    },
-  }))(request, response)
-})
-```
+Configure your app in `src/config.json`. If you're using [graphql-optics-tracing](packages/tracer), these should match the options you pass to [logEntry](packages/tracer#logentry).
 
-## API
-
-#### formatEntry({ request, metrics })
-
-Formats a graphQL query for logging.
-
-_request_
+Install dependencies and launch the app.
 
 ```
-{
-  definitions,  // from express-graphql
-  graphql       // raw graphQL query as string
-}
+yarn install
+yarn dev
 ```
 
-_metrics_  
-Object in apollo-tracing format.  
-Ex: return value of apolloTracing.formatTraceData.
+## Packages
 
-Returns an object to be passed to logEntry
-
-#### logEntry({ entry, options })
-
-Sends entry data to ElasticSearch for indexing
-
-_entry_ (required)  
-Return value of formatEntry
-
-_options_  
-ElasticSearch options.
-
-Defaults:
-
-```
-{
-  elasticIndex: 'graphql',
-  elasticClient: {
-    host: 'localhost:9200',
-    log: 'trace',
-  },
-}
-```
-
-## Configuring elastic mappings
-
-Before constructing the aggregations, you will need to run the following against your elasticsearch instance. Replace `graphql_test` with the name of the index you will use in your app.
-
-```
-PUT graphql_test
-{}
-
-PUT graphql_test/_mapping/graphql
-{
-  "properties": {
-    "rootQuery": {
-      "type": "keyword",
-      "index": true
-    }
-  }
-}
-```
+[graphql-optics-tracing](packages/tracer)
