@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<table>
+  <thead>
+    <tr>
+      <th>
+        Field name
+      </th>
+      <th>
+        Duration
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        foo
+      </td>
+      <td>
+        3.24
+         ms
+      </td>
+    </tr>
+    <tr>
+      <td>
+        bar
+      </td>
+      <td>
+        0
+         ms
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;

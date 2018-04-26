@@ -1,18 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<div
-  style={
-    Object {
-      "backgroundColor": "rgba(248, 248, 255, 1)",
-      "fontFamily": "monospace",
-      "marginBottom": "20px",
-      "overflowX": "auto",
-      "whiteSpace": "pre",
-      "width": "100%",
+<div>
+  <div
+    style={
+      Object {
+        "backgroundColor": "rgba(248, 248, 255, 1)",
+        "fontFamily": "monospace",
+        "marginBottom": "20px",
+        "overflowX": "auto",
+        "whiteSpace": "pre",
+        "width": "100%",
+      }
     }
-  }
->
-  {allLocations(search: "Boulder")})
+  >
+    {allLocations(search: "Boulder")})
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Field name
+        </th>
+        <th>
+          Duration
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          foo
+        </td>
+        <td>
+          0.04
+           ms
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
-`
+`;
+
+exports[`renders correctly when there' no data 1`] = `<div />`;
