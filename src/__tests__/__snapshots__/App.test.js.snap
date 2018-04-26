@@ -1,31 +1,63 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App renders correctly (after data is returned from server) 1`] = `
-<div>
-  <h1>
-    graphql-optics
-  </h1>
-  <div>
-    <h2>
-      Aggregations
-    </h2>
-    <ul>
-      <li>
-        allLocations
-         - 
-        442
-      </li>
-      <li>
-        allFlights
-         - 
-        3342
-      </li>
-      <li>
-        allWhatever
-         - 
-        2
-      </li>
-    </ul>
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "row",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "height": "100vh",
+        "overflowY": "auto",
+        "paddingRight": "40px",
+        "width": "30%",
+      }
+    }
+  >
+    <div
+      className="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "fontFamily": "sans-serif",
+        }
+      }
+    >
+      allLocations
+       - 
+      442
+    </div>
+    <div
+      className="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "fontFamily": "sans-serif",
+        }
+      }
+    >
+      allFlights
+       - 
+      3342
+    </div>
+    <div
+      className="button"
+      onClick={[Function]}
+      style={
+        Object {
+          "fontFamily": "sans-serif",
+        }
+      }
+    >
+      allWhatever
+       - 
+      2
+    </div>
   </div>
 </div>
 `;

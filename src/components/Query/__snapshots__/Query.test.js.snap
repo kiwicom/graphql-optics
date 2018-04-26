@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="button"
+  onClick={[Function]}
+  style={
+    Object {
+      "marginBottom": "20px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "rgba(248, 248, 255, 1)",
+        "fontFamily": "monospace",
+        "overflowX": "auto",
+        "whiteSpace": "pre",
+        "width": "100%",
+      }
+    }
+  >
+    {allLocations(search: "Boulder")})
+  </div>
+</div>
+`;

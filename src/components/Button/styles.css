@@ -1,0 +1,15 @@
+.button {
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin: 5px;
+  display: flex;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #aaa;
+}
+
+.button.active {
+  background-color: #bab;
+}

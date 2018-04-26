@@ -1,14 +1,11 @@
 // @flow
 
-const path = require('path');
-
-const appDirectory = __dirname;
+const path = require('path')
 
 module.exports = () => ({
-  context: appDirectory,
   entry: './src/tracer.js',
   output: {
-    path: path.resolve(appDirectory, 'dist'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
     libraryTarget: 'commonjs2',
   },
@@ -21,8 +18,8 @@ module.exports = () => ({
           babelrc: true,
         },
         include: [
-          path.resolve(appDirectory, 'config'),
-          path.resolve(appDirectory, 'src'),
+          path.resolve(__dirname, 'config'),
+          path.resolve(__dirname, 'src'),
         ],
       },
       {
@@ -32,4 +29,4 @@ module.exports = () => ({
     ],
   },
   target: 'node',
-});
+})

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders children 1`] = `
+<div
+  style={
+    Object {
+      "height": "100vh",
+      "overflowY": "auto",
+      "paddingRight": "40px",
+      "width": "30%",
+    }
+  }
+>
+  <div>
+    Hello!
+  </div>
+</div>
+`;

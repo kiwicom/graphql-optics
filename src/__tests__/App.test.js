@@ -1,6 +1,7 @@
 import React from 'react'
+import { renderWithRouter } from './helpers'
 import App from '../App'
-import renderer from 'react-test-renderer'
+
 import config from '../config.json'
 
 jest.mock('../server', () => {
@@ -21,32 +22,42 @@ jest.mock('../server', () => {
 
   const _search_spy = jest.fn()
 
+  const aggsResponse = {
+    aggregations: {
+      rootQueries: {
+        buckets: data,
+      },
+    },
+  }
+  const queriesResponse = {
+    hits: {
+      hits: [{ _id: 'uuid', _source: { graphql: 'allLocations...' } }],
+    },
+  }
+
   return {
     search: query => {
       _search_spy(query)
       return {
-        then: fn =>
-          fn({
-            aggregations: {
-              rootQueries: {
-                buckets: data,
-              },
-            },
-          }),
+        then: fn => fn(query.body.aggs ? aggsResponse : queriesResponse),
       }
     },
     _search_spy,
   }
 })
 
+afterEach(() => {
+  jest.resetAllMocks()
+})
+
 describe('App', () => {
   it('renders correctly (after data is returned from server)', () => {
-    const tree = renderer.create(<App />).toJSON()
+    const tree = renderWithRouter({ children: <App /> })
     expect(tree).toMatchSnapshot()
   })
 
   it('requests aggregation list using the correct query', () => {
-    const tree = renderer.create(<App />).toJSON()
+    const tree = renderWithRouter({ children: <App /> })
     const server = require.requireMock('../server')
     expect(server._search_spy).toHaveBeenCalledWith({
       index: config.elastic_index,
@@ -57,6 +68,24 @@ describe('App', () => {
             terms: {
               field: 'rootQuery',
             },
+          },
+        },
+      },
+    })
+  })
+
+  it('requests query list using the rootQuery route param', () => {
+    const tree = renderWithRouter({
+      children: <App />,
+      location: '/aggregations/allLocations',
+    })
+    const server = require.requireMock('../server')
+    expect(server._search_spy.mock.calls[1][0]).toEqual({
+      index: config.elastic_index,
+      body: {
+        query: {
+          match: {
+            rootQuery: 'allLocations',
           },
         },
       },
